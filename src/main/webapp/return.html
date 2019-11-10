@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Cars</title>
+<style>
+.form-group
+{
+width:350px;
+float:center;
+}
+.container
+{
+font:white;
+}
+.pic
+  {
+   width:700px;
+ 
+  margin-top:-450px;
+  margin-left:100px;
+  float:right;
+ 
+  }
+</style>
+</head>
+<body>
+<form action="ReturnCarServlet" method="get">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DAIL YOUR CAR</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Customermenu.html">Home</a></li>
+      
+    </ul>
+     <ul class="nav navbar-nav navbar-right"></ul>
+  </div>
+ 
+</nav>
+ <div class="container">
+  <h2>RETURN YOUR CAR</h2>
+  
+  <div class="left">
+  <div class="form-group">
+      <label for="ename">Car-ID:</label>
+      <input type="text" class="form-control" placeholder="Enter Car ID" name="car_id" required/>
+    </div>
+    <div class="form-group">
+    <p><b>Note:In Case of Wrong Booking Please Cancel Your Booking Using the Car ID with in 30 Minutes from the time of Booking, After 30 Minutes Amount cannot be Refunded </b></p>
+    
+    
+    </div>
+   <!--  <div class="form-group">
+     <label for="ename">Date:</label>
+      <input type="text" class="form-control" placeholder="Enter Car Booked ID" name="cbid" required/>
+  
+    </div>
+  -->
+    <button type="submit" class="btn btn-default">RETURN CAR</button>
+     
+    
+
+</div>
+</form>
+</body>
+</html>

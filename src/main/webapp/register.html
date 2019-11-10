@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+.navbar
+  {
+  
+ top:-110px;
+  margin-left:10px;
+  
+  }
+  .container{
+  top:-100px;
+  
+  }
+  
+  
+  
+  </style>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register/Login</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+ 
+
+</head>
+<body>
+<form action="URegisterServlet" method="get">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="front.html">DAIL YOUR CAR</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="front.html">Home</a></li></ul>
+      <ul class="nav navbar-nav navbar-right">
+      
+     
+    </ul>
+    <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="front.html">TOLL FREE:- 1800 888 4747</a>
+    </div>
+    
+      
+      
+  </div>
+</nav>
+
+
+
+    <div class="main">
+
+        <section class="signup">
+             
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Register/Login</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="forename" id="name" placeholder="ForeName"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="surname" id="name" placeholder=" SurName"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="address1" id="address1" placeholder="Address"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="address2" id="address2" placeholder="Address"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="postcode" id="postcode" placeholder="Postcode"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="mobile" id="phone" placeholder="Mobile"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Email Id"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="username" id="username" placeholder="Username"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Have already an account ? <a href="userlogin.html" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </form>
+</body>
+</html>

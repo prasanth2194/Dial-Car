@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+@import
+	"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	;
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(./images/o.jpg) no-repeat;
+	background-size: cover;
+}
+
+.login-box {
+	width: 280px;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+	color: #f1ecfb;
+}
+
+.login-box h1 {
+	float: left;
+	font-size: 60px;
+	border-botton: 6px solid #4caf58;
+	margin-bottom: 17px;
+	padding: 13px 5px;
+	color: black;
+}
+
+.textbox {
+	width: 100%;
+	overflow: hidden;
+	font-size: 30px;
+	padding: 8px 0;
+	margin: 8px 0;
+	margin-bottom: 17px;
+	border-bottom: 1px solid #4caf58;
+}
+
+.textbox input {
+	border: none;
+	outline: none;
+	background: none;
+	color: black;
+}
+
+.active:hover {
+	background-color:yellow;
+	
+}
+
+
+
+.active {
+	width: 100%;
+	background: yellow;
+	border: 2px solid yellow;
+	color: 	black  ;
+	padding: 18px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+}
+
+::placeholder {
+	color: black;
+}
+</style>
+</head>
+<body>
+<form action="AdminLogin" method="post">
+	<div class="login-box">
+		<h1>Login</h1>
+		<div class="textbox">
+			<i class="fa fa-user" aria-hidden="true"></i> <input type="text"
+				placeholder="Username" name="username">
+		</div>
+		<div class="textbox">
+			<i class="fa fa-lock" aria-hidden="true"></i> <input type="password"
+				placeholder="Password" name="password">
+		</div>
+		<b><input class="active" type="submit" value="Login"></b>
+	</div>
+	</form>
+</body>
+</html>
+

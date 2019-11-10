@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <style>
+   header{
+background-image:linear-gradient(rgba(1,0,0,0.5),rgba(1,0,0,0.5)) ,url(./images/co.jpg);
+height:100vh;
+margin-top:-20px;
+background-size:cover;
+background-position:center;
+}
+
+  .list-group-item
+  {
+  width:200px;
+  height:50px;
+  color:white;
+  background:black;
+  margin-top:20px;
+  margin-left:0px;
+  }
+  .container
+  {
+  float:left;
+  margin-top:30px;
+  margin-left:50px;
+  width:300px;
+  color:#ffff99;
+  }
+  .container img
+  {
+  
+  width:850px;
+  height:auto;
+  }
+  .pic
+  {
+  position:absolute;
+  margin-top:20px;
+  margin-left:125px;
+  float:left;
+  width:200px;
+  }
+  .head h3
+{
+float:s;
+margin-left:20px;
+margin-right:20px;
+color:white;
+}
+.list-group ul li a{
+color:white;
+}
+.re{
+margin-top:-700px;
+margin-left:955px;
+
+
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  color:white;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+<form action="UserFeedbackInsert" method="get">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="front.html">DIAL YOUR CAR</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="front.html">Home</a></li>
+      
+        </ul>
+        <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="front.html">TOLL FREE:- 1800 888 4747</a>
+    </div>
+         
+</nav>
+
+<header>
+<div class="main"></div>
+<div class="container">
+  <h2>ABOUT US</h2>
+  <p><i>Welcome to <b>DAIL YOUR CAR</b>, the fastest growing online car rental and taxi hire company in India committed to provide door to door online taxi service to the travelers. We make available the taxi booking, car rental services, long term rentals and cheap cabs on the factual rates. With various online cab hiring facilities, we offer the best taxi rentals with driver and long-time commercial car hiring for business trips or any office meeting purposes. If traveling any city in India and surfing taxi cabs near me, we make efforts for the affordable and cheap cab booking for your travel. For the cab services in India, our intention is to arrange the various types of cabs at inexpensive & reasonable fare rates.  <br>      <b>Contact us:sahithi.prasanth@cars.com Location:Hyderabad</b></i></p>
+ 
+
+</div>
+
+</header>
+   <div class="re">
+<marquee behavior="scroll" direction="up">
+    <img src="./images/re.png"  />
+  </marquee></div> 
+ 
+<button class="open-button" onclick="openForm()">FEED BACK</button>
+
+<div class="form-popup" id="myForm">
+  <form action="UserFeedbackInsert" class="form-container">
+    <h1>FORM</h1>
+
+    <label for="name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter your Name" name="name" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter your Email" name="email" required>
+    
+    <label for="name"><b>PHONE</b></label>
+    <input type="text" placeholder="Enter your Mobile Number" name="phone" required>
+    
+    
+    <label for="name"><b>FEEDBACK</b></label>
+    <input type="text" placeholder="Enter your Message" name="feedback" required>
+
+   
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+ 
+</div>
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+</form>
+
+</body>
+</html>

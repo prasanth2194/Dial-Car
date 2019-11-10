@@ -1,0 +1,54 @@
+
+*{
+	margin:0;
+	padding:0;
+	font-family: Century Gothic;
+	
+}
+
+
+ header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(./images/carss.png);
+height:100vh;
+
+background-size:cover;
+background-position:center;
+}
+ul{
+	list-style-type: none;
+	float: left;
+    margin-top:150px;
+	margin-left: 270px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #b3ffe0;
+	padding:5px 20px;
+	border: 1px solid #ffffcc ;
+	transition:0.9s ease;
+}
+ul li :hover {
+	
+	background-color: 	#ffffcc;
+	color:black;
+	
+}
+ul li a{
+	color:white;
+}
+.para{
+	position :absolute;
+	top:82%;
+	left:13%;
+}
+.para p{
+	color:#b3ffe0;
+	font-size: 20px;
+	font-style: italic;
+}
+
+	
+	

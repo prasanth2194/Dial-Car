@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Cars</title>
+<style>
+.form-group
+{
+width:350px;
+float:center;
+}
+.container
+{
+font:white;
+}
+.pic
+  {
+   width:700px;
+ 
+  margin-top:-510px;
+  margin-left:100px;
+  float:right;
+ 
+  }
+</style>
+<script> 
+function GEEKFORGEEKS()                                    
+{ 
+    var name = document.forms["RegForm"]["carname"];               
+   /*  var email = document.forms["RegForm"]["EMail"];    
+    var phone = document.forms["RegForm"]["Telephone"];  
+    var what =  document.forms["RegForm"]["Subject"];  
+    var password = document.forms["RegForm"]["Password"];  
+    var address = document.forms["RegForm"]["Address"];  
+    */
+    while (!name.matches("[A-Z]*"))                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+      </script>
+</head>
+<body>
+<form name="RegForm" action="Insert" method="get" onsubmit="return GEEKFORGEEKS()">  
+      >
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="AdminCart.html">DIAL YOUR CAR</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="AdminCart.html">Home</a></li>
+      
+      
+    </ul>
+     <ul class="nav navbar-nav navbar-right"></ul>
+  </div>
+   
+ 
+</nav>
+ <div class="container">
+  <h2>ADD CAR MENU</h2>
+  <form action="EmpolyeeServlet" method="get">
+  <div class="left">
+  <div class="form-group">
+      <label for="ename">Car-ID:</label>
+      <input type="text" class="form-control" placeholder="Enter Car ID" name="car_id" required/>
+    </div>
+    
+    <div class="form-group">
+      <label for="ename">CarName:</label>
+      <input type="text" class="form-control" placeholder="Enter Car Name" name="carname"/>
+    </div>
+    <div class="form-group">
+      <label for="eadd">Description:</label>
+      <input type="text" class="form-control" placeholder="Enter Car Description" name="descrption" required/>
+    </div>
+    <div class="form-group">
+      <label for="emobile">CarType:</label>
+      <input type="text" class="form-control" placeholder="Enter Car Type" name="type" required/>
+    </div>
+    <div class="form-group">
+      <label for="eprofile">Price/km:</label>
+      <input type="text" class="form-control" placeholder="Enter Price/km" name="price_km" required/>
+    </div>
+    <div class="form-group">
+      <label for="eprofile">CarStrength:</label>
+      <input type="text" class="form-control" placeholder="Enter CarStrength" name="carstrength" required/>
+    </div>
+    <div class="form-group">
+      <label for="eprofile">Status:</label>
+      <input type="text" class="form-control" placeholder="Enter Status" name="status" required/>
+    </div>
+ 
+    <button type="submit" class="btn btn-default">ADD</button>
+    
+     <div class="pic">
+<img src="./images/add.gif">
+</div>
+    
+    
+    
+    
+    
+</form>
+</body>
+</html>
